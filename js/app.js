@@ -9,7 +9,7 @@ console.log(getName);
 alert(message);
 
 //Question 1
-var question1 = prompt('I first started playing video games when I was only three years old. My very first console I have owned is a Super Nintendo and I loved playing Super Mario World. Is Super Mario my all time favorite video game series?');
+var question1 = prompt('I first started playing video games when I was only three years old. The very first console I have owned is a Super Nintendo and I loved playing Super Mario World. Is Super Mario my all time favorite video game series?');
 
 if (question1.toLowerCase() === 'no') {
   alert('Correct!!!');

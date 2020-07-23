@@ -1,0 +1,14 @@
+header {
+  background-color: gray;
+  color: white;
+  font-size: xx-large;
+}
+
+p {
+  background-color: lightseagreen;
+  color: black;
+}
+
+footer {
+  background-color: orange;
+}
