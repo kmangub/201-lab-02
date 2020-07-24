@@ -13,15 +13,15 @@ alert(message);
 
 var question1 = prompt('I first started playing video games when I was only three years old. The very first console I have owned is a Super Nintendo and I loved playing Super Mario World. Is Super Mario my all time favorite video game series?');
 
-if (question1.toLowerCase() === 'no') {
+while (question1.toLowerCase() !== 'no' && question1.toLowerCase() !== 'yes'){
+  question1 = prompt('Please answer with either a yes or a no. I first started playing video games when I was only three years old. The very first console I have owned is a Super Nintendo and I loved playing Super Mario World. Is Super Mario my all time favorite video game series?');
+}
+if (question1 === 'no') {
   alert('Correct!!!');
-  // console.log(question1);
+  //console.log(question1.toLowerCase());
 } else {
   alert('Incorrect');
 
-}
-while (question1 !== 'no' && question1 !== 'yes'){
-  question1 = prompt('Please answer with either a yes or a no. I first started playing video games when I was only three years old. The very first console I have owned is a Super Nintendo and I loved playing Super Mario World. Is Super Mario my all time favorite video game series?');
 }
 
 
@@ -31,7 +31,7 @@ while (question1 !== 'no' && question1 !== 'yes'){
 //Question 2
 var question2 = prompt('I might have mentioned that I proudly served in the United States military... but which branch was it? Was it the United States Air Force?');
 
-while (question2 !== 'no' && question2 !== 'yes'){
+while (question2.toLowerCase() !== 'no' && question2.toLowerCase() !== 'yes'){
   question2 = prompt('Please answer with either a yes or a no. I might have mentioned that I proudly served in the United States military... but which branch was it? Was it the United States Air Force?');
 }
 
@@ -46,7 +46,7 @@ if (question2.toLowerCase() === 'no') {
 //Question 3
 var question3 = prompt('You might recall that I reside and work in Japan. As far as grade school goes, did I attend elemetary, middle, and high school in Japan as well?');
 
-while (question3 !== 'no' && question3 !== 'yes'){
+while (question3.toLowerCase() !== 'no' && question3.toLowerCase() !== 'yes'){
   question3 = prompt('Please answer with either a yes or a no. You might recall that I reside and work in Japan. As far as grade school goes, did I attend elemetary, middle, and high school in Japan as well?');
 }
 
@@ -60,7 +60,7 @@ if (question3.toLowerCase() === 'yes') {
 //Question 4
 var question4 = prompt('I love animals, especially cats and dogs. I love one of them more than the other and it\'s dogs, isn\'t it?');
 
-while (question4 !== 'no' && question4 !== 'yes'){
+while (question4.toLowerCase() !== 'no' && question4.toLowerCase() !== 'yes'){
   question4 = prompt('Please answer with either a yes or a no. I love animals, especially cats and dogs. I love one of them more than the other and it\'s dogs, isn\'t it?');
 }
 
@@ -76,7 +76,7 @@ if (question4.toLowerCase() === 'yes') {
 
 var question5 = prompt('Last question, I attended Jacksonville University and got my Bachelor of Science in Biology, right?');
 
-while (question5 !== 'no' && question5 !== 'yes'){
+while (question5.toLowerCase() !== 'no' && question5.toLowerCase() !== 'yes'){
   question5 = prompt('Please answer with either a yes or a no. I attended Jacksonville University and got my Bachelor of Science in Biology, right?');
 }
 
