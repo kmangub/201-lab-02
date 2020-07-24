@@ -4,7 +4,7 @@
 var getName = prompt('What is your name');
 var message = 'Hello ' + getName + ', and welcome to my website! My name is Alan Karlo Mangubat and today you get to learn about me. I\'m going to ask you a series of questions and all you have to do is answer yes or no. Let\'s see how many you can get correct!';
 
-console.log(getName);
+// console.log(getName);
 
 alert(message);
 
@@ -15,7 +15,7 @@ var question1 = prompt('I first started playing video games when I was only thre
 
 if (question1.toLowerCase() === 'no') {
   alert('Correct!!!');
-  console.log(question1);
+  // console.log(question1);
 } else {
   alert('Incorrect');
 
@@ -37,7 +37,7 @@ while (question2 !== 'no' && question2 !== 'yes'){
 
 if (question2.toLowerCase() === 'no') {
   alert('Bingo!!!');
-  console.log(question2);
+  // console.log(question2);
 } else {
   alert('Wrong.');
 
@@ -52,7 +52,7 @@ while (question3 !== 'no' && question3 !== 'yes'){
 
 if (question3.toLowerCase() === 'yes') {
   alert('Right on!!!');
-  console.log(question3);
+  // console.log(question3);
 } else {
   alert('Sorry, but no.');
 
@@ -67,7 +67,7 @@ while (question4 !== 'no' && question4 !== 'yes'){
 if (question4.toLowerCase() === 'yes') {
   alert('Wrong!!!');
   alert('Just kidding, you\'re right!');
-  console.log(question4);
+  // console.log(question4);
 } else {
   alert('You are incorrect, my friend.');
 
@@ -82,7 +82,7 @@ while (question5 !== 'no' && question5 !== 'yes'){
 
 if (question5.toLowerCase() === 'no') {
   alert('Very nice!!');
-  console.log(question5);
+  // console.log(question5);
 } else {
   alert('Biology? No way!');
 
