@@ -1,14 +1,35 @@
-header {
+body {
   background-color: gray;
+}
+header {
+  margin: 0px auto;
+  width: 960px;
+  background-color: rgb(117, 117, 107);
+  height: 350px;
   color: white;
-  font-size: xx-large;
+  font-size: large;
+  text-align: center;
+}
+
+header > img {
+  width: 250px;
+  border: 1px dotted black;
+  padding: 5px
 }
 
 p {
+  margin: 0px auto;
   background-color: lightseagreen;
   color: black;
+  width: 960px;
+  
 }
 
 footer {
+  margin: 0px auto;
   background-color: orange;
+  text-align: right;
+  width: 960px;
 }
+
+
