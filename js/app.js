@@ -1,5 +1,6 @@
 'use strict';
 
+
 //Get name
 
 var getScore = 0;
@@ -95,53 +96,60 @@ var question6 = parseInt(prompt('I\'m thinking of a number from 0 to 10, what is
 
 var guesses = 0;
 
-loop1: while (guesses < 3) {
+while (guesses < 3) {
   if (question6 === 8) {
     alert('Great Job!');
+    guesses++;
     getScore++;
-    break loop1;
+    break;
   }
   else if (question6 < 8) {
     alert('Too low.');
+    guesses++;
     question6 = parseInt(prompt('I\'m thinking of a number from 0 to 10, what is it? Please answer with a number.'));
   }
   else if (question6 > 8) {
     alert('Too high.');
+    guesses++;
     question6 = parseInt(prompt('I\'m thinking of a number from 0 to 10, what is it? Please answer with a number.'));
   }
-  guesses++;
-  if (guesses === 3) {
-    alert('So close... The answer I\'m thinking is 8.');
-    console.log('guesses', guesses);
-  }
 }
-
+if (guesses === 3) {
+  alert('So close... The answer I\'m thinking is 8.');
+  console.log('guesses', guesses);
+}
+console.log(guesses);
 
 //Question 7
 
 var question7 = prompt('Name one of my favorite colors.');
 
-var colorGuess = 0;
+var colorGuess = 6;
+
+var answerCorrectly = false;
 
 var colorArray = ['blue', 'green', 'black'];
 
-loop2: while (colorGuess < 5) {
+while (colorGuess > 0 && !answerCorrectly) {
+  colorGuess--;
+  //console.log(colorGuess);
   for (var i = 0; i < colorArray.length; i++) {
+    //console.log(colorArray[i]);
     if (colorArray[i] === question7) {
       alert(`Yes! ${question7} is one of my favorite colors!`);
+      answerCorrectly = true;
       getScore++;
-      break loop2;
-    }
-    else if (question7 !== colorArray) {
-      alert('Incorrect');
-      question7 = prompt('Name one of my favorite colors.');
-    }
-    colorGuess++;
-    console.log('colorGuess', colorGuess);
-    if (colorGuess === 5) {
-      alert('Wrong. the answer is blue, green, or black.');
     }
   }
+  if (!answerCorrectly && colorGuess > 0) {
+    alert('Incorrect');
+    question7 = prompt('Name one of my favorite colors.');
+  }
+  //console.log('colorGuess', colorGuess);
+}
+
+if (colorGuess === 0 && !answerCorrectly) {
+  alert('Wrong. the answer is blue, green, or black.');
 }
 
 //Closing Remarks
