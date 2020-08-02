@@ -118,7 +118,7 @@ function q6() {
     if (question6 === 8) {
       alert('Great Job!');
       guesses--;
-      // getScore++;
+      getScore++;
       numberGuessCorrectly = true;
     }
     else if (question6 < 8 && !numberGuessCorrectly) {
